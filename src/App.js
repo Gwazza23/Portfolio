@@ -1,8 +1,12 @@
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import AllRoutes from "./Util/AllRoutes";
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <Router>
+      <AllRoutes />
+    </Router>
   );
 }
 

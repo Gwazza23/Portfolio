@@ -1,0 +1,90 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+
+
+.home-content-wrapper {
+    cursor: default;
+    width: 80vw;
+    height: fit-content;
+}
+.home-container h2 {
+  font-size: 2rem;
+}
+.home-container span {
+    display: inline-block;
+    animation: wave 2s infinite linear;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin: 20px 0px;
+}
+.home-container p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@keyframes wave {
+    0%, 25%, 50%, 75%, 100% {
+      transform: rotate(0deg);
+    }
+    12.5% {
+      transform: rotate(15deg);
+    }
+    37.5% {
+      transform: rotate(-15deg);
+    }
+    62.5% {
+      transform: rotate(15deg);
+    }
+    87.5% {
+      transform: rotate(-15deg);
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .home-content-wrapper {
+        width: 90vw;
+        margin: 50px;
+    }
+    .home-container h1 {
+        font-size: 2.3rem;
+    }
+    .home-container h2 {
+        font-size: 1.8rem;
+    }
+    .home-container p {
+        font-size: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .home-container h1 {
+      font-size: 1.8rem;
+    }
+    .home-container h2 {
+      font-size: 1.6rem;
+    }
+    .home-container p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .home-container h1 {
+      font-size: 1.6rem;
+    }
+    .home-container h2 {
+      font-size: 1.4rem;
+    }
+    .home-container p {
+      font-size: 0.75rem;
+    }
+  }
