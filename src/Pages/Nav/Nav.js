@@ -6,30 +6,27 @@ import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 function Nav() {
   const [mode, setMode] = useState(false);
   const navigate = useNavigate();
+  console.log(mode);
   function redirectHome() {
     navigate("/");
   }
   function handleMode() {
-    document.body.classList.toggle("dark-theme");
     setMode(!mode);
+    document.body.classList.toggle("dark-theme");
   }
   return (
     <>
       <div className="nav-container">
         <div className="nav-content-wrapper">
           <img
-            src={
-              mode
-                ? "/media/portfolio-logo-light.png"
-                : "/media/portfolio-logo-dark.png"
-            }
+            src={"media/portfolio-logo.png"}
             alt="logo"
             onClick={redirectHome}
           />
           <div className="nav-links">
-            <NavLink>About</NavLink>
-            <NavLink>Projects</NavLink>
-            <NavLink>Contact</NavLink>
+            <NavLink to={"/about"}>About</NavLink>
+            <NavLink to={"/projects"}>Projects</NavLink>
+            <NavLink to={"/contacts"}>Contact</NavLink>
           </div>
           <button className="mode-switch" onClick={handleMode}>
             {mode ? <BsFillSunFill /> : <BsFillMoonFill />}

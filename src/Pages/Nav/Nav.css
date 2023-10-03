@@ -4,9 +4,11 @@
   height: 15dvh;
   width: 100dvw;
   justify-content: center;
+  z-index: 100;
 }
 .nav-content-wrapper {
   justify-content: space-between;
+  display: block;
   width: 80vw;
 }
 .nav-links {
@@ -43,6 +45,7 @@
 }
 
 .nav-container img {
+ background-color: white;
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -63,4 +66,14 @@
     font-size: 1.1rem;
     color: var(--primary);
     background: none;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-content-wrapper {
+    width: 90vw;
+  }
+  .mode-switch {
+    right: 5vw;
+  }
 }
