@@ -11,6 +11,7 @@ function Home() {
         <p>
           An aspiring web developer based in Manchester with a passion for
           creating innovative and smooth online experiences that hooks users in.
+          Have a look around, learn a bit about me and what I've been upto and hopefully we can connect!
         </p>
       </div>
     </div>

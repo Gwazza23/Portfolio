@@ -19,7 +19,7 @@ function Nav() {
       <div className="nav-container">
         <div className="nav-content-wrapper">
           <img
-            src={"media/portfolio-logo.png"}
+            src={"media/portfolio-logo.webp"}
             alt="logo"
             onClick={redirectHome}
           />
