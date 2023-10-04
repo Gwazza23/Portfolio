@@ -1,0 +1,134 @@
+.contact-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 15vh;
+  height: 85dvh;
+  width: 100dvw;
+  z-index: 2;
+  overflow: scroll;
+  padding-bottom: 10px;
+}
+
+.contact-content-wrapper {
+  position: relative;
+  width: 70vw;
+  height: 80dvh;
+  display: flex;
+  flex-direction: column;
+}
+.contact-content-wrapper h2 {
+  cursor: default;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.contact-section-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+  padding-bottom: 20px;
+}
+.email-section {
+  width: 50%;
+}
+
+.email-section h3 {
+  cursor: default;
+  width: 90%;
+  margin: 10px auto 10px 0px;
+}
+.email-section form {
+  display: flex;
+  flex-direction: column;
+}
+.email-section input {
+  border: 0.5px solid var(--primary);
+  margin: 10px auto 10px 0px;
+  background: none;
+  width: 90%;
+  height: 40px;
+  padding: 8px;
+  font-weight: 300;
+}
+.email-section input::placeholder {
+  color: var(--primary);
+  opacity: 0.8;
+}
+#send-message {
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: var(--background-color);
+}
+.email-section textarea {
+  border: 0.5px solid var(--primary);
+  color: var(--primary);
+  margin: 10px auto 10px 0px;
+  width: 90%;
+  height: 100px;
+  padding: 8px;
+  background: none;
+}
+
+.links-section {
+  width: 50%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.link-list {
+  margin-top: 10px;
+  position: relative;
+  list-style-type: none;
+  display: flex;
+}
+.links-section::before {
+  content: " ";
+  position: absolute;
+  background-color: var(--primary);
+  width: 90%;
+  height: 2px;
+  top: -10px;
+}
+.link-list li a {
+  color: var(--primary);
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-content-wrapper {
+    width: 80vw;
+  }
+  .contact-section-wrapper {
+    align-items: center;
+  }
+  .links-section {
+    width: 70%;
+  }
+  .email-section {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .links-section {
+    width: 90%;
+  }
+  .link-list,.links-section h3 {
+    margin: 10px 20px;
+  }
+  .email-section {
+    width: 90%;
+  }
+  .email-section h3,
+  .email-section input,
+  .email-section textarea {
+    margin: 10px auto;
+    width: 100%;
+  }
+  .links-section::before {
+    width: 100%;
+  }
+}

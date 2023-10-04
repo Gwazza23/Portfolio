@@ -26,7 +26,7 @@ function Nav() {
           <div className="nav-links">
             <NavLink to={"/about"}>About</NavLink>
             <NavLink to={"/projects"}>Projects</NavLink>
-            <NavLink to={"/contacts"}>Contact</NavLink>
+            <NavLink to={"/contact"}>Contact</NavLink>
           </div>
           <button className="mode-switch" onClick={handleMode}>
             {mode ? <BsFillSunFill /> : <BsFillMoonFill />}
