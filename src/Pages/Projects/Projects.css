@@ -1,0 +1,218 @@
+.projects-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 15vh;
+  height: 85dvh;
+  width: 100dvw;
+  z-index: 2;
+  overflow: scroll;
+  padding-bottom: 10px;
+}
+
+.projects-content-wrapper {
+  position: relative;
+  width: 70vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.projects-content-wrapper h2 {
+  cursor: default;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.projects-section-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  position: relative;
+  list-style-type: none;
+  z-index: 200;
+}
+.projects-section-wrapper::before {
+  content: " ";
+  background: var(--primary);
+  display: inline-block;
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  left: 50%;
+}
+
+.project-container {
+  border: 0.8px solid var(--primary);
+  position: relative;
+  break-inside: avoid;
+  margin-bottom: 20px;
+  opacity: 0.7;
+  width: calc(50% - 20px);
+  height: fit-content;
+  z-index: 5;
+}
+.project-container:hover {
+  opacity: 1;
+}
+.project-container::before {
+  content: "";
+  border: 3px solid var(--primary);
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  width: 15px;
+  z-index: 2;
+}
+
+.project-container img {
+  width: 100%;
+}
+.project-info {
+  padding: 5px;
+}
+.info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-metadata {
+  cursor: default;
+  display: flex;
+  align-items: center;
+}
+.info-metadata p {
+  margin: 0px 5px;
+}
+.exclamation-container {
+  position: relative;
+}
+#exclamation {
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #ffc300;
+}
+.pop-up {
+  position: absolute;
+  top: 100%;
+  width: 250px;
+  white-space: normal;
+  border: 1px solid var(--background-secondary);
+  padding: 5px;
+  font-size: 0.75rem;
+  background-color: var(--background-color);
+  display: none;
+  white-space: normal;
+  z-index: 10;
+}
+.exclamation-container:hover .pop-up {
+  display: block;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: auto;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.external-links {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.external-links a {
+  color: var(--primary);
+}
+
+.project-container h3 {
+  font-weight: 500;
+  margin: 5px 0px;
+}
+.project-container p {
+  cursor: default;
+  font-weight: 200;
+  font-size: 0.85rem;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 5px 0px;
+}
+.project-stack p {
+  cursor: default;
+  background-color: var(--background-secondary);
+  padding: 3px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+
+.project-container:nth-child(even)::before {
+  left: -20px;
+}
+.project-container:nth-child(odd)::before {
+  right: -22px;
+}
+.project-container:nth-child(even) {
+  top: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects-container {
+    justify-content: flex-start;
+  }
+  .projects-content-wrapper {
+    margin-left: 8vw;
+    width: 80vw;
+  }
+  .info-header {
+    flex-direction: column;
+  }
+  .info-header h3 {
+    font-size: 1rem;
+  }
+  .project-info p {
+    font-size: 0.7rem;
+  }
+  .project-stack p {
+    font-size: 0.7rem;
+  }
+  .project-container:nth-child(even) .exclamation-container:hover .pop-up {
+    transform: translateX(-80%);
+  }
+  .project-container:nth-child(odd) .exclamation-container:hover .pop-up {
+    transform: translateX(-80%);
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .projects-section-wrapper {
+        justify-content: center;
+    }
+    .projects-content-wrapper h2 {
+        font-size: 1.8rem;
+    }
+    .project-container {
+        width: 90%;
+        opacity: 1;
+        background-color: var(--background-color);
+    }
+    .project-container::before {
+        content: none;
+    }
+    .project-container:nth-child(even) {
+        top: 0px;
+      }
+      .project-info p {
+        font-size: 0.65rem;
+        margin: 5px 0px;
+      }
+      .project-stack p {
+        font-size: 0.6rem;
+      }
+}
