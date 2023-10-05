@@ -61,14 +61,12 @@
   z-index: 400;
 }
 .about-section h3 {
-cursor: default;
   display: flex;
   margin: 10px 0px;
   font-weight: 500;
 }
 
 .about-section p {
-    cursor: default;
   color: var(--secondary);
   font-weight: 200;
   font-size: 0.85rem;

@@ -15,6 +15,7 @@
   display: flex;
 }
 .nav-links a {
+  cursor: url(../../../public/media/custom-cursor.png), auto;
   position: relative;
   margin: 0px 10px;
   text-decoration: none;
@@ -48,14 +49,13 @@
   background-color: white;
   width: 40px;
   height: 40px;
-  cursor: pointer;
 }
 
 .mode-switch {
   position: fixed;
   bottom: 5vh;
   right: 10vw;
-  cursor: pointer;
+  cursor: url(../../../public/media/custom-cursor.png), auto;
   border: 1px solid var(--primary);
   width: 30px;
   height: 30px;

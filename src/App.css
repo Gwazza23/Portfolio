@@ -23,6 +23,10 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  cursor: url(../public/media/custom-cursor.png), auto;
+}
+
 body {
   color: var(--primary);
   background-color: var(--background-color);
@@ -41,9 +45,4 @@ body {
   border-radius: 50%;
   pointer-events: none;
   z-index: 10000;
-}
-
-.page-transition {
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
 }

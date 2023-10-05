@@ -18,7 +18,6 @@
   flex-direction: column;
 }
 .contact-content-wrapper h2 {
-  cursor: default;
   font-size: 2.5rem;
   text-transform: uppercase;
 }
@@ -35,7 +34,6 @@
 }
 
 .email-section h3 {
-  cursor: default;
   width: 90%;
   margin: 10px auto 10px 0px;
 }
@@ -44,6 +42,7 @@
   flex-direction: column;
 }
 .email-section input {
+  cursor: url(../../../public/media/custom-cursor.png), auto;
   border: 0.5px solid var(--primary);
   margin: 10px auto 10px 0px;
   background: none;
@@ -57,11 +56,16 @@
   opacity: 0.8;
 }
 #send-message {
-  cursor: pointer;
   background-color: var(--secondary);
   color: var(--background-color);
+  transition: all 0.2s ease-in;
+}
+#send-message:hover {
+  background-color: var(--background-color);
+  color: var(--secondary);
 }
 .email-section textarea {
+  cursor: url(../../../public/media/custom-cursor.png), auto;
   border: 0.5px solid var(--primary);
   color: var(--primary);
   margin: 10px auto 10px 0px;
@@ -92,8 +96,8 @@
   top: -10px;
 }
 .link-list li a {
+  cursor: url(../../../public/media/custom-cursor.png), auto;
   color: var(--primary);
-  cursor: pointer;
   margin-right: 5px;
 }
 
@@ -116,7 +120,8 @@
   .links-section {
     width: 90%;
   }
-  .link-list,.links-section h3 {
+  .link-list,
+  .links-section h3 {
     margin: 10px 20px;
   }
   .email-section {
