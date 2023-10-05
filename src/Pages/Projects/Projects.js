@@ -2,10 +2,18 @@ import { projects } from "../../Util/projects";
 import { VscLinkExternal } from "react-icons/vsc";
 import { AiFillGithub, AiFillExclamationCircle } from "react-icons/ai";
 import "./Projects.css";
+import { motion } from "framer-motion";
+import { divVariant } from "../../Util/framerVariants";
 
 function Projects() {
   return (
-    <div className="projects-container">
+    <motion.div
+      variants={divVariant}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="projects-container"
+    >
       <div className="projects-content-wrapper">
         <h2>Projects</h2>
         <ul className="projects-section-wrapper">
@@ -48,7 +56,7 @@ function Projects() {
           })}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -9,7 +9,7 @@ import Contact from "../Pages/Contact/Contact";
 function AllRoutes() {
   const location = useLocation();
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Nav />}>
           <Route index element={<Home />} />

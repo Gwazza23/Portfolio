@@ -1,8 +1,16 @@
 import "./About.css";
+import { motion } from "framer-motion";
+import { divVariant } from "../../Util/framerVariants";
 
 function About() {
   return (
-    <div className="about-container">
+    <motion.div
+      variants={divVariant}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="about-container"
+    >
       <div className="about-content-wrapper">
         <h2>About Me</h2>
         <ul className="about-sections-wrapper">
@@ -71,7 +79,7 @@ function About() {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

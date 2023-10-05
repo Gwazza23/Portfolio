@@ -42,3 +42,8 @@ body {
   pointer-events: none;
   z-index: 10000;
 }
+
+.page-transition {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
