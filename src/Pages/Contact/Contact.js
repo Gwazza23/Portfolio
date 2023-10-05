@@ -1,6 +1,5 @@
 import "./Contact.css";
 import {
-  AiFillFacebook,
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
@@ -72,7 +71,7 @@ function Contact() {
               </li>
               <li>
                 <a
-                  href="https://github.com/Gwazza23"
+                  href="https://www.linkedin.com/in/gayan-weerawarnakula-2ba702283/"
                   rel="noreferrer"
                   target="blank_"
                 >
@@ -81,20 +80,11 @@ function Contact() {
               </li>
               <li>
                 <a
-                  href="https://github.com/Gwazza23"
+                  href="https://www.instagram.com/g.w23"
                   rel="noreferrer"
                   target="blank_"
                 >
                   <AiFillInstagram />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/Gwazza23"
-                  rel="noreferrer"
-                  target="blank_"
-                >
-                  <AiFillFacebook />
                 </a>
               </li>
             </ul>

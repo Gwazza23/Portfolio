@@ -31,3 +31,14 @@ body {
   background-size: cover;
   transition: all 0.2s ease;
 }
+
+#mouse-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin: -32px 0 0 -32px;
+  border: 1.5px solid var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+}
