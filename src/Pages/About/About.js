@@ -9,16 +9,16 @@ function About() {
           <li className="about-section">
             <h3>Get To Know Me.</h3>
             <p>
-              Hey my name is Gayan Weerawarnakula ( yeah I know you just
-              tried to pronounce it ). I'm a Sri Lankan 🇱🇰 ( hence the long
-              surname ), born in Italy 🇮🇹, living in UK 🇬🇧. I would consider
-              myself a melomaniac 🎶 mainly into R&B and Hip Hop and my
-              favourite artist lately has been Brent Faiyaz. For sports,
-              basketball is my go to, I love watching ( #MFFL ) and playing it,
-              I'm also a Manchester United Fan, although please don't ask me to
-              come play football, I am absolutely shocking 😔. Finally, my
-              favourite movie is The Social Network and my favourite show is
-              It's Always Sunny In Philadelphia.
+              Hey my name is Gayan Weerawarnakula ( yeah I know you just tried
+              to pronounce it ). I'm a Sri Lankan 🇱🇰 ( hence the long surname ),
+              born in Italy 🇮🇹, living in UK 🇬🇧. I would consider myself a
+              melomaniac 🎶 mainly into R&B and Hip Hop and my favourite artist
+              lately has been Brent Faiyaz. For sports, basketball is my go to,
+              I love watching ( #MFFL ) and playing it, I'm also a Manchester
+              United Fan, although please don't ask me to come play football, I
+              am absolutely shocking 😔. Finally, my favourite movie is The
+              Social Network and my favourite show is It's Always Sunny In
+              Philadelphia.
             </p>
           </li>
           <li className="about-section">
@@ -32,8 +32,8 @@ function About() {
               wanted to do for a career and I fell in love with aspect of
               solving complex problems and the rewarding feeling of overcoming
               these challenges hooked me, This experience motivated me to take a
-              leap of faith and pursue a career in coding and I
-              couldn't have been more happier with the decision.
+              leap of faith and pursue a career in coding and I couldn't have
+              been more happier with the decision.
             </p>
           </li>
           <li className="about-section">
