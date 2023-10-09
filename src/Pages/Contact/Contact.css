@@ -46,6 +46,7 @@
   border: 0.5px solid var(--primary);
   margin: 10px auto 10px 0px;
   background: none;
+  color: var(--primary);
   width: 90%;
   height: 40px;
   padding: 8px;
