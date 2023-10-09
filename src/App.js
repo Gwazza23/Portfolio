@@ -26,6 +26,15 @@ function App() {
 
       mouseCircle.style.top = revisedMousePosY + "px";
       mouseCircle.style.left = revisedMousePosX + "px";
+
+      if (window.innerWidth >= 768) {
+        mouseCircle.style.display = "block";
+        mouseCircle.style.top = revisedMousePosY + "px";
+        mouseCircle.style.left = revisedMousePosX + "px";
+      } else {
+        mouseCircle.style.display = "none";
+      }
+
     }
     delayMouseFollow();
   }
