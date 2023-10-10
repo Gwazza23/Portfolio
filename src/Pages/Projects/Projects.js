@@ -1,6 +1,7 @@
 import { projects } from "../../Util/projects";
 import { VscLinkExternal } from "react-icons/vsc";
 import { AiFillGithub, AiFillExclamationCircle } from "react-icons/ai";
+import { IoConstructSharp } from "react-icons/io5";
 import "./Projects.css";
 import { motion } from "framer-motion";
 import { divVariant } from "../../Util/framerVariants";
@@ -20,7 +21,7 @@ function Projects() {
           {projects.map((project) => {
             return (
               <li className="project-container" key={project.id}>
-                <img src={project.img} alt={project.name} />
+                <img src={project.img} alt={project.name} loading="lazy" />
                 <div className="project-info">
                   <div className="info-header">
                     <div className="info-metadata">
@@ -30,6 +31,14 @@ function Projects() {
                         <div className="exclamation-container">
                           <AiFillExclamationCircle id="exclamation" />
                           <p className="pop-up">{project.note}</p>
+                        </div>
+                      ) : (
+                        ""
+                      )}
+                      {project.dev ? (
+                        <div className="exclamation-container">
+                          <IoConstructSharp id="exclamation" />
+                          <p className="pop-up">{project.dev}</p>
                         </div>
                       ) : (
                         ""

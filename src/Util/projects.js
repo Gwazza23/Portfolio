@@ -1,5 +1,20 @@
 export const projects = [
   {
+    id: 6,
+    name: "Evolv Fitness",
+    created: "10/23",
+    desc: "This project is a gym website meant to act as a clone/mashup of gym websites like PureGym and TheGym",
+    stack: [
+      "React",
+      "HTML",
+      "JavaScript"
+    ],
+    img: "media/evolv-thumbnail.webp",
+    url: "https://evolvfitness.netlify.app",
+    git: "https://github.com/Gwazza23/Gym",
+    dev: "This website is currently under development - more updates will be added daily (watch this space!)"
+  },
+  {
     id: 5,
     name: "Good Living",
     created: "09/23",
