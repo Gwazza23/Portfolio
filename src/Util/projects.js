@@ -1,5 +1,20 @@
 export const projects = [
   {
+    id: 7,
+    name: "Culinary Crafts",
+    created: "10/23",
+    desc: "A recipe finder website that allows users to find recipes for different dishes powered by TheMealDB api",
+    stack: [
+      "React",
+      "HTML",
+      "JavaScript"
+    ],
+    img: "media/cc-thumbnail.webp",
+    url: "https://culinarycrafts.netlify.app",
+    git: "https://github.com/Gwazza23/culinarycrafts",
+    dev: "This website is currently under development - more updates will be added on consistent basis (watch this space!)"
+  },
+  {
     id: 6,
     name: "Evolv Fitness",
     created: "10/23",
@@ -12,7 +27,7 @@ export const projects = [
     img: "media/evolv-thumbnail.webp",
     url: "https://evolvfitness.netlify.app",
     git: "https://github.com/Gwazza23/Gym",
-    dev: "This website is currently under development - more updates will be added daily (watch this space!)"
+    dev: "This website is currently under development - more updates will be added on a consistent basis (watch this space!)"
   },
   {
     id: 5,
